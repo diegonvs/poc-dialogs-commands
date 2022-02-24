@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@clayui/css/lib/css/atlas.css" />
+</head>
+
+<body>
+    <button class="btn btn-primary" data-target="#clayDefaultModal" data-toggle="modal" id="buttonTrigger"
+        type="button">
+        It will call our custom <code>window.confirmAsync</code>
+    </button>
+    <div aria-labelledby="clayDefaultModalLabel" class="fade modal d-none" id="clayDefaultModal" role="dialog"
+        tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="clayDefaultModalLabel">
+                        Modal Title
+                    </div>
+                    <button aria-labelledby="Close" class="close" data-dismiss="modal" role="button" id="timesButton"
+                        type="button">
+                        <svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+                            <use href="/static/icons.svg#times"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <div class="modal-item-last">
+                        <div class="btn-group">
+                            <div class="btn-group-item">
+                                <button class="btn btn-secondary" data-dismiss="modal" id="closeButton" type="button">
+                                    Close
+                                </button>
+                            </div>
+                            <div class="btn-group-item">
+                                <button class="btn btn-primary" id="okButton" type="button">
+                                    Ok
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
