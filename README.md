@@ -4,8 +4,9 @@
 
 1. Run `yarn install`
 2. `yarn start`
-3. Click on the button
-4. See it works
+3. Open Chrome DevTools console
+4. Click on the button
+5. See, it's working :dog_dance:
 
 See `index.js:82` to see how it can be used.
 
